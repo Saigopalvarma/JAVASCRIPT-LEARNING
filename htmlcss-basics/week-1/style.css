@@ -1,0 +1,29 @@
+#i{
+  color: rgb(9, 9, 29);
+  font-size:100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-size-adjust: initial;
+}
+.i{
+  color:white;
+  background-color: rgb(231, 31, 64);
+  border-radius: 50%;
+  background-size: contain;
+  border:none;
+  padding: 50px;
+  margin-right:10px ;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+.i-b{
+  color:white;
+  background-color: rgb(37, 87, 102);
+  border-radius: 50%;
+  background-size: contain;
+  border:none;
+  padding: 50px;
+  margin-right:10px ;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}

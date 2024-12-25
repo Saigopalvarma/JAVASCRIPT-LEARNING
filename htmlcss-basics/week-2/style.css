@@ -1,0 +1,17 @@
+body{
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow: hidden;
+}
+p{
+  color:rgb(86, 86, 52);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  text-align: center; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
