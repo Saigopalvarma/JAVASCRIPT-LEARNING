@@ -7,10 +7,30 @@
     <title>DOM</title>
   </head>
   <body>
-    <script>
-    
-   
-    </script>
+   <button>
+    click me
+   </button>
+   <button class="js-btn2">
+   clickme2
+   </button>
   </body>
+    <script>
+      // document.body.innerHTML='hello';
+      // document.title='Good Job!';
+      // document.body.style.backgroundColor='lightblue';
+      // document.body.style.color='white';
+    //  console.log(document.title);
+    //  document.title='Good Job!';
+    //  console.log(typeof document.body);
+    //  console.log(document.body.innerHTML);
+    //  document.body.innerHTML='<button>hello me</button>';
+    //  console.log(document.body.innerHTML);
+     console.log(document.querySelector('button').innerHTML)
+     document.querySelector('button').innerHTML='click me......';
+     document.querySelector('.js-btn2').innerHTML='btn2-----';
+     const buttonElement=document.querySelector('.js-btn2');
+    console.log(buttonElement);
+    </script>
+   
 
 </html>

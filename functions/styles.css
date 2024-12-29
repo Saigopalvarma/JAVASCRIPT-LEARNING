@@ -1,0 +1,52 @@
+/* Text styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Change text color to white */
+  background-image: url('https://img.freepik.com/free-photo/abstract-dark-background-with-flowing-colouful-waves_1048-13124.jpg?t=st=1735454051~exp=1735457651~hmac=e39bf8fd6e3e28df2af7213a6c888b30bd6fc049c387ea572abd5ebd50ee473f&w=900');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6347; /* Tomato */
+}
+
+p {
+  color: #ffffff; /* White */
+}
+
+/* Button styles */
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #625476; /* Darker green */
+}
+
+/* Game options styles */
+.game-options {
+  display: flex;
+  gap: 10px; /* Adds space between buttons */
+}

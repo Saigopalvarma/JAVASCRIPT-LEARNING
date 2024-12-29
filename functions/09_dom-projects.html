@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-PRACTICE</title>
+</head>
+<body>
+  <p> You subscibed for the channel</p>
+  <button onclick="toToggle()" class="js-sub-btn">  Subscribe</button>
+
+</body>
+<script>
+  function toToggle(){
+    const buttonElement=document.querySelector('.js-sub-btn');
+  if(buttonElement.innerText==='Subscribe'){
+    buttonElement.innerText='Unsubscribed';//innerText is used to change the text of the button even it contain spaces
+  }else if(buttonElement.innerHTML==='Unsubscribed'){
+    buttonElement.innerHTML='Subscribe';
+  }
+  }
+</script>
+</html>
