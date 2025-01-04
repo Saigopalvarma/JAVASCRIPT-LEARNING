@@ -5,19 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM-PRACTICE</title>
+  <style>
+    body{
+      
+      font-family: 'Arial', sans-serif;
+      
+
+    }
+    .sub-btn{
+      background-color: rgb(14, 14, 27);
+      color: white;
+    
+      padding: 11px 20px;
+      border: none;
+      font-weight: bold;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+    .is-subscribed{
+      background-color: rgb(232, 246, 232);
+      color:black;
+    }
+  </style>
+   
+  </style>
 </head>
 <body>
   <p> You subscibed for the channel</p>
-  <button onclick="toToggle()" class="js-sub-btn">  Subscribe</button>
+  <button onclick="toToggle()" class="js-sub-btn sub-btn">  Subscribe</button>
 
 </body>
 <script>
   function toToggle(){
     const buttonElement=document.querySelector('.js-sub-btn');
   if(buttonElement.innerText==='Subscribe'){
-    buttonElement.innerText='Unsubscribed';//innerText is used to change the text of the button even it contain spaces
+    buttonElement.innerText='Unsubscribed';
+    buttonElement.classList.add('is-subscribed');
+    //innerText is used to change the text of the button even it contain spaces
   }else if(buttonElement.innerHTML==='Unsubscribed'){
     buttonElement.innerHTML='Subscribe';
+    buttonElement.classList.remove('is-subscribed');
   }
   }
 </script>
