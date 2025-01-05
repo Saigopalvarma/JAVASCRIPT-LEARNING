@@ -57,7 +57,7 @@ button:hover {
 }
 
 .input {
-  width: 90%;
+  width: 80%;
   padding: 8px;
   font-size: 27px;
   background-color: black;
@@ -74,6 +74,10 @@ button:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  h1{
+    margin-right:25px ;
+    font-size: 25px;
+  }
   .container {
     padding: 20px 30px;
   }
@@ -81,6 +85,7 @@ button:hover {
   .keypad {
     grid-template-columns: repeat(4, 60px);
     gap: 8px;
+    margin-bottom: 50px;
   }
 
   button, #b1 {
@@ -90,6 +95,7 @@ button:hover {
 
   .input {
     font-size: 22px;
+    width:75%;
   }
 }
 
@@ -101,6 +107,7 @@ button:hover {
   .keypad {
     grid-template-columns: repeat(4, 50px);
     gap: 5px;
+    margin-bottom: 50px;
   }
 
   button, #b1 {
@@ -110,5 +117,6 @@ button:hover {
 
   .input {
     font-size: 18px;
+    width: 75%;
   }
 }

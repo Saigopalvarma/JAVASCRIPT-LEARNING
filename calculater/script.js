@@ -50,20 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
        }
 
-    try {
+       try {
+       
     
-      const result = Function(`'use strict'; return (${resultField.value})`)();
-      if(result==='function Error() { [native code] }'){
+        // Get the user-entered expression
+        const expression = resultField.value;
+    
+        // Use math.js to evaluate the expression securely
+        const result = math.evaluate(expression);
+    
+        // Display the result in the input field
+        resultField.value = result;
+      } catch (error) {
+        console.error('Invalid expression:', resultField.value);
+    
+        // Display an error message in the input field
         resultField.value = 'Error';
       }
-      else{
-        resultField.value = result;
-      }
-      resultField.value = result;
-    } catch (error) {
-      console.error('Invalid expression:', resultField.value);
-      resultField.value = 'Error';
     }
-  }
- 
 });
