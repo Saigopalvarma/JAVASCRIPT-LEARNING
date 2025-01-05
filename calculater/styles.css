@@ -65,3 +65,44 @@ button:hover{
   background-color: rgb(72, 70, 70);
   
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 30px;
+  }
+
+  .keypad {
+    grid-template-columns: repeat(4, 60px);
+    gap: 8px;
+  }
+
+  button, #b1 {
+    padding: 20px 10px;
+    font-size: small;
+  }
+
+  .input {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 20px;
+  }
+
+  .keypad {
+    grid-template-columns: repeat(4, 50px);
+    gap: 5px;
+  }
+
+  button, #b1 {
+    padding: 15px 8px;
+    font-size: x-small;
+  }
+
+  .input {
+    font-size: 18px;
+  }
+}
